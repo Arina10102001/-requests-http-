@@ -1,0 +1,27 @@
+import requests
+import json
+
+def sperher_api():
+    url = 'https://akabab.github.io/superhero-api/api/'
+    hero_dict =json.loads (request.get(url).content)
+
+    return hero_dict
+
+
+def max_hero_power(hero_dict):
+    heroes_list=['Hulk', 'Captan America','Thanos']
+    intelligence_dict=dict()
+
+    for line in hero_dict:
+        for name in hero_dict:
+            if name ==line ['name']
+                 intelligence_dict[line['name']]=line['powerstats']['intlligence']
+
+    max_key=max(intelligence_dict,key=intelligence_dict.get)
+    print(f'Самый умный:{max_key}')
+
+    def main():
+        max_hero_power(superhero_api())
+
+    if_name_=='_main_':
+        main()
